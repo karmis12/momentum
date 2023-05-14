@@ -1,2 +1,3 @@
-Let's start vanilla javascript!!!
+# Let's start vanilla javascript!!!
+
 It's exciting~~

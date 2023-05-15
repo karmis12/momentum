@@ -1,0 +1,70 @@
+# 변수 생성 const VS let
+
+☆변수만들때 let, const, var차이
+
+- let 재선언 금지, 재할당 가능
+- const 재선언 금지, 재할당 금지
+- var 재선언 가능, 재할당 가능(var은 오래된 방식이므로 사용 지양)
+ 
+ -----
+
+☆let
+
+let a = b;
+
+let a = c;
+
+//재선언 금지
+
+let a = b;
+
+a = c;
+
+//재할당은 가능
+
+☆const
+
+const a = b;
+
+const a = c;
+
+//재선언 금지
+
+const a = b;
+
+a = c;
+
+//재할당 금지
+
+☆var
+
+var a = b;
+
+var a = c;
+
+a = d;
+
+//재선언, 재할당 가능
+
+-----
+const와 let을 어디에 사용하냐에 따라서 코드 작성자의 의도를 알 수 있다.
+
+const를 사용하면 안바꾸겠구나
+
+let을 사용하면 뒤에서 바뀔 수 있는 변수겠구나
+
+var은 최근에는 사용하지 않음
+
+-----
+
+always const
+
+sometimes let
+
+never var
+
+기본적으로 const로 작성하고
+
+필요한것만 let으로 작성하고
+
+var은 사용하지 않는다..!

@@ -1,70 +1,49 @@
-// const a=4;
-// const b=3;
-// let myName="jimmy";
-
-
-// console.log(a+b);
-// console.log(a*b);
-// console.log(a/b);
-// console.log("my name is "+myName);
-
-// myName="jung_tae";
-// console.log("my name is "+myName);
-
-// const theWeekend=["mon", "tue","wed","thu","fri","sat"];
-
-// console.log(theWeekend);
-// console.log(theWeekend[0]);
-// theWeekend.push("sun");
-// console.log(theWeekend);
-
-// const jimmy={
-//     age:25,
-//     height:175,
-//     weight:66,
-//     blood:"b"
+// const calculator={
+//     plus:function(a,b){
+//         console.log(a+b);
+//     },
+//     minus:function(a,b){
+//         console.log(a-b);
+//     },
+//     multi:function(a,b){
+//         console.log(a*b);
+//     },
+//     divide:function(a,b){
+//         console.log(a/b);
+//     },
+//     square:function(a,b){
+//         console.log(a**b);
+//     }
 // }
 
-// console.log(jimmy);
-// console.log(jimmy.age);
+// calculator.plus(9,3);
+// calculator.minus(9,3);
+// calculator.multi(9,3);
+// calculator.divide(9,3);
+// calculator.square(9,3);
 
-function myName(myName){
-    console.log("Hello my name is "+myName)
-}
-
-myName("jimmy");
-
-
-
-
-function plus(a,b){
-    console.log(a+b);
-}
-function minus(a,b){
-    console.log(a-b);
-}
-function multi(a,b){
-    console.log(a*b);
-}
-function divide(a,b){
-    console.log(a/b);
-}
-
-plus(2,4);
-minus(2,4);
-multi(2,4);
-divide(2,4);
-
-const player={
-    name:"jimmy",
-    age:25,
-    sports:"soccer",
-    sayHello:function(otherPersonName){
-        console.log("hello "+otherPersonName);
+const calculator={
+    plus:function(a,b){
+        return a+b;
+    },
+    minus:function(a,b){
+        return a-b;
+    },
+    multi:function(a,b){
+        return a*b;
+    },
+    divide:function(a,b){
+        return a/b;
+    },
+    square:function(a,b){
+        return a**b;
     }
 }
 
-console.log(player.name)
-console.log(player.age)
-console.log(player.sports)
-player.sayHello("alice");
+const plusResult=calculator.plus(4,5);
+const minusResult=calculator.minus(plusResult,4);
+const multiResult=calculator.multi(7,minusResult);
+const divideResult=calculator.divide(multiResult,5);
+const squareResult=calculator.square(divideResult,2);
+
+console.log(plusResult, minusResult, multiResult, divideResult,squareResult);

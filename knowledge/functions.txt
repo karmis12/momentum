@@ -1,0 +1,22 @@
+기본 함수만들기
+
+```jsx
+function functName(name){
+	console.log("Hello my name is "+name);
+}
+```
+
+Object 내에서 함수 만들기
+
+```jsx
+const player={
+
+name:"Jimmy",
+
+age:25,
+
+functName:function(name){
+	console.log("Hello my name is "+name)
+}
+}
+```

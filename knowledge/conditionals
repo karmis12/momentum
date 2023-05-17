@@ -1,0 +1,11 @@
+parseInt(~~) → 정수를 숫자로
+
+isNaN(~~) → ~~이 NaN이면 true NaN이 아니면 false
+
+|| → or  
+
+a || b → a와 b중에서 하나만 true 면 다 true 
+
+&& → and
+
+a && b → a와b중에서 하나라도 false면 모두 false

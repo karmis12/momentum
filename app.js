@@ -18,8 +18,15 @@ function handleMouseOn() {
     superEventHandler.style.color = "#e74c3c";
   }
   function handleMouseClick() {
+    const currentColor = superEventHandler.style.color
+    let newColor; 
+    if (currentColor ==="blue"){
+        newColor="pink";
+    }else{
+        newColor= "blue";
+    }
+    superEventHandler.style.color=newColor;
     superEventHandler.innerText = "The title is clicked!";
-    superEventHandler.style.color = "#9b59b6";
   }
   superEventHandler.addEventListener("mouseenter", handleMouseOn);
   superEventHandler.addEventListener("mouseleave", handleMouseLeave);

@@ -1,18 +1,29 @@
-const hello= document.querySelector(".hello h1");
-console.dir(hello);
+const superEventHandler= document.querySelector(".hello h1");
+// console.dir(superEventHandler);
 
-function handleClick(){
-    hello.style.color="blue";
-}
-
-function handleEnter(){
-    hello.innerText="Mouse is here!!";
-}
-
-function handleLeave(){
-    hello.innerText="Mouse is gone!!";
-}
-
-hello.addEventListener("click", handleClick);
-hello.addEventListener("mouseenter",handleEnter);
-hello.addEventListener("mouseleave",handleLeave);
+function handleMouseOn() {
+    superEventHandler.innerText = "The mouse is here!";
+    superEventHandler.style.color = "#1abc9c";
+  }
+  function handleMouseLeave() {
+    superEventHandler.innerText = "The mouse is gone!";
+    superEventHandler.style.color = "#3498db";
+  }
+  function handleWindowResize() {
+    superEventHandler.innerText = "You just resized!";
+    superEventHandler.style.color = "#9b59b6";
+  }
+  function handleMouseRightClick() {
+    superEventHandler.innerText = "That was a right click!";
+    superEventHandler.style.color = "#e74c3c";
+  }
+  function handleMouseClick() {
+    superEventHandler.innerText = "The title is clicked!";
+    superEventHandler.style.color = "#9b59b6";
+  }
+  superEventHandler.addEventListener("mouseenter", handleMouseOn);
+  superEventHandler.addEventListener("mouseleave", handleMouseLeave);
+  window.addEventListener("resize", handleWindowResize);
+  window.addEventListener("auxclick", handleMouseRightClick);
+  superEventHandler.addEventListener("click", handleMouseClick);
+  

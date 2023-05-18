@@ -1,7 +1,18 @@
 const hello= document.querySelector(".hello h1");
+console.dir(hello);
 
-function clickChecker(){
+function handleClick(){
     hello.style.color="blue";
 }
 
-hello.addEventListener("click",clickChecker);
+function handleEnter(){
+    hello.innerText="Mouse is here!!";
+}
+
+function handleLeave(){
+    hello.innerText="Mouse is gone!!";
+}
+
+hello.addEventListener("click", handleClick);
+hello.addEventListener("mouseenter",handleEnter);
+hello.addEventListener("mouseleave",handleLeave);

@@ -1,0 +1,49 @@
+style작업에 적합한 도구는 CSS다!!
+
+animation에 적합한 도구는 JS다!!
+
+html 파일은 CSS문서와 JS문서를 import하고 있다.
+
+```jsx
+const h1= document.querySelector(".hello h1");
+
+function handleClick(){
+	if (h1.className==="clicked"){
+	h1.className="";
+	}else{h1.className==="clicked"
+	}
+}
+
+h1.addEventListener("click",handleClick);
+```
+
+위처럼 className을 쓰면 className은 다른 class들을 다 교체해버린다.
+
+따라서  classList를 사용  
+
+classList.contain()은 우리가 명시한 class가 HTML element의 class에 포함되어 있는지를 말해준다
+
+classList.remove()명시한 class name을 제거하고
+
+classList.add()는 명시한 class name을 추가한다.
+
+```jsx
+const h1= document.querySelector(".hello h1");
+
+function handleClick(){
+    const classClicked="clicked";
+    if (h1.classList.contains(classClicked)){
+        h1.classList.remove(classClicked);
+    }else{
+        h1.classList.add(classClicked);
+    }
+}
+
+h1.addEventListener("click",handleClick);
+```
+
+더 좋은 function이 존재한다. toggle function은 class name이 존재하는지 확인한다.
+
+class name이 존재하면 toggle은 class name을 제거하고, class name이 존재하지 않으면 toggle은 class name을 추가한다.
+
+Toggle을 사용하면 아래처럼 간단하게 바꿀 수 있다.

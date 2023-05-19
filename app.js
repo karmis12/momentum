@@ -1,14 +1,17 @@
-const h1= document.querySelector(".hello h1");
+const loginForm= document.querySelector(".login-form");
+const loginInput= loginForm.querySelector("input:first-child");
+const link = document.querySelector("a");
 
-function handleClick(){
-    // const classClicked="clicked";
-    // if (h1.classList.contains(classClicked)){
-    //     h1.classList.remove(classClicked);
-    // }else{
-    //     h1.classList.add(classClicked);
-    // }
-    // 위의 식이 아래의 식 하나로 대체됨
-    h1.classList.toggle("clicked");
+// value는 input값 안에 유저가 치는 값을 말한다
+
+function onLoginSubmit(event){
+    event.preventDefault();
+    console.log(loginInput.value);
 }
 
-h1.addEventListener("click",handleClick);
+function handleLink(){
+    alert("clicked")
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
+link.addEventListener("click", handleLink);

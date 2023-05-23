@@ -13,14 +13,17 @@
     <form class="game-form">
         <div class="game-form__column">
             <h2>Generate a number between 0 and </h2>
-            <input type="text" required >
+            <input class="bound" type="number" required >
         </div>
         <div class="game-form__column">
             <h4>Guess the number:</h4>
-            <input type="text" required>
+            <input class="guess" type="number" required>
             <input type="submit" value="play!">
         </div>
-        <h4 class="hidden"></h4>
+        <div class="result hidden">
+            <h4></h4>
+            <h4></h4>
+        </div>
     </form>
     <script src="numberguess.js"></script>
 </body>

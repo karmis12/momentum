@@ -14,11 +14,54 @@ img{
     opacity: 80%;
     object-fit:contain;
 }
-
 body{
     background-color: rgba(247, 148, 148, 0.7);
+    display:flex;
+    align-items: center;
+}
+.clock{
+    right:10px;
+    bottom:0px;
+    position:fixed;
 }
 
+.login-form{
+    position:fixed;
+    top:20px;
+}
+.greeting{
+    position:fixed;
+    color:tomato;
+    left:10px;
+    top:0px;
+    font-weight: 600;
+}
+
+.quotes{
+    color:rgb(240, 52, 105);
+    position:fixed;
+    justify-content: center;
+    align-items: center;
+    bottom:10px;
+    font-weight: 600;
+}
 .quotes span:first-child{
     font-size: 19px;
+    display: block;
+}
+.todo-form{
+    position:fixed;
+    top:100px;
+    left:20px;
+}
+
+.todo-list{
+    position:fixed;
+    top:120px;
+    color:black;
+}
+.weather{
+    position: fixed;
+    top:0px;
+    right:10px;
 }

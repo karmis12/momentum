@@ -13,7 +13,8 @@ function onLoginSubmit(event){
 
 function paintGreeting(username){
     greeting.classList.remove("hidden");
-    greeting.innerText=`Welcome ${username}!!`;
+    greeting.innerText=`500일 동안 오빠 사랑해줘서 고마워요! ${username}❤
+    오빠가 앞으로 더 잘할게요 ㅎㅎ 마니마니 사랑해`;
     // anotherAccount.classList.remove("hidden");
 }
 

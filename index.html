@@ -8,15 +8,25 @@
     <title>Momentum</title>
 </head>
 <body>
-    <form class="login-form hidden">
-        <input type="text" required maxlength="10" placeholder="What is your name?">
-        <input type="submit" value="Log In">
-    </form>
-    <h1 class="hidden greeting">메롱</h1>
-    <button class="another hidden">Another Account</button>
-
     <h2 class="clock">  
     </h2>
+    <form class="login-form hidden">
+        <input type="text" required maxlength="10" placeholder="이름이 모양? 알려줭">
+        <input type="submit" value="고마워">
+    </form>
+    <h1 class="hidden greeting">메롱</h1>
+    <!-- <button class="another hidden">Another Account</button> -->
+    
+    <form class="todo-form">
+        <input type="text" placeholder="해야할 일을 적어줘!" required>
+    </form>
+
+    <ul class="todo-list">
+        <li>
+            <span>text</span>
+            <button>x</button>
+        </li>
+    </ul>
 
     <div class="quotes">
         <span></span>
@@ -26,5 +36,7 @@
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>

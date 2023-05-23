@@ -18,3 +18,7 @@ img{
 body{
     background-color: rgba(247, 148, 148, 0.7);
 }
+
+.quotes span:first-child{
+    font-size: 19px;
+}

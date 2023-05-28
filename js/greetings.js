@@ -1,6 +1,7 @@
 const loginForm=document.querySelector(".login-form");
 const loginText=document.querySelector(".login-form input:first-child");
 const greeting=document.querySelector(".greeting");
+const toDooForm = document.querySelector(".todo-form")
 // const anotherAccount=document.querySelector(".another");
 
 function onLoginSubmit(event){
@@ -14,6 +15,7 @@ function onLoginSubmit(event){
 function paintGreeting(username){
     greeting.classList.remove("hidden");
     greeting.innerText=`${username}님 오늘하루도 화이팅하세요`;
+    toDooForm.classList.remove("hidden");
     // anotherAccount.classList.remove("hidden");
 }
 

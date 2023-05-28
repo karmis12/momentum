@@ -11,7 +11,7 @@ img{
     right:0px;
     bottom:0px;
     z-index: -1;
-    opacity: 80%;
+    opacity: 60%;
     object-fit:contain;
 }
 body{
@@ -23,23 +23,25 @@ body{
     right:10px;
     bottom:0px;
     position:fixed;
-    color:white;
+    color:silver;
 }
 
 .login-form{
     position:fixed;
-    top:20px;
+    justify-content: center;
+    align-items: center;
+    top:40px;
 }
 .greeting{
     position:fixed;
-    color:tomato;
+    color:silver;
     left:10px;
     top:0px;
     font-weight: 600;
 }
 
 .quotes{
-    color:rgb(240, 52, 105);
+    color:silver;
     position:fixed;
     justify-content: center;
     align-items: center;
@@ -52,17 +54,18 @@ body{
 }
 .todo-form{
     position:fixed;
-    top:100px;
+    top:80px;
 }
 
 .todo-list{
     position:fixed;
-    top:120px;
-    color:black;
+    top:100px;
+    color:white;
+    font-weight: 600;
 }
 .weather{
     position: fixed;
     top:0px;
     right:10px;
-    color:white;
+    color:silver;
 }
